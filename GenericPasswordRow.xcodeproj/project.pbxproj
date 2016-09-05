@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFFC76B11D7DFF2A006C3E55 /* GenericPasswordRow.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFC76B01D7DFF2A006C3E55 /* GenericPasswordRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFC76B81D7DFF2A006C3E55 /* GenericPasswordRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFC76AD1D7DFF29006C3E55 /* GenericPasswordRow.framework */; };
+		CFFC76BD1D7DFF2A006C3E55 /* GenericPasswordRowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFC76BC1D7DFF2A006C3E55 /* GenericPasswordRowTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFFC76B91D7DFF2A006C3E55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFFC76A41D7DFF29006C3E55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFFC76AC1D7DFF29006C3E55;
+			remoteInfo = GenericPasswordRow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFFC76AD1D7DFF29006C3E55 /* GenericPasswordRow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenericPasswordRow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFFC76B01D7DFF2A006C3E55 /* GenericPasswordRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericPasswordRow.h; sourceTree = "<group>"; };
+		CFFC76B21D7DFF2A006C3E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFFC76B71D7DFF2A006C3E55 /* GenericPasswordRowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericPasswordRowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFFC76BC1D7DFF2A006C3E55 /* GenericPasswordRowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPasswordRowTests.swift; sourceTree = "<group>"; };
+		CFFC76BE1D7DFF2A006C3E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFFC76A91D7DFF29006C3E55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFFC76B41D7DFF2A006C3E55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFC76B81D7DFF2A006C3E55 /* GenericPasswordRow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFFC76A31D7DFF29006C3E55 = {
+			isa = PBXGroup;
+			children = (
+				CFFC76AF1D7DFF2A006C3E55 /* GenericPasswordRow */,
+				CFFC76BB1D7DFF2A006C3E55 /* GenericPasswordRowTests */,
+				CFFC76AE1D7DFF29006C3E55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFFC76AE1D7DFF29006C3E55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC76AD1D7DFF29006C3E55 /* GenericPasswordRow.framework */,
+				CFFC76B71D7DFF2A006C3E55 /* GenericPasswordRowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFFC76AF1D7DFF2A006C3E55 /* GenericPasswordRow */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC76B01D7DFF2A006C3E55 /* GenericPasswordRow.h */,
+				CFFC76B21D7DFF2A006C3E55 /* Info.plist */,
+			);
+			path = GenericPasswordRow;
+			sourceTree = "<group>";
+		};
+		CFFC76BB1D7DFF2A006C3E55 /* GenericPasswordRowTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC76BC1D7DFF2A006C3E55 /* GenericPasswordRowTests.swift */,
+				CFFC76BE1D7DFF2A006C3E55 /* Info.plist */,
+			);
+			path = GenericPasswordRowTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CFFC76AA1D7DFF29006C3E55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFC76B11D7DFF2A006C3E55 /* GenericPasswordRow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CFFC76AC1D7DFF29006C3E55 /* GenericPasswordRow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFFC76C11D7DFF2A006C3E55 /* Build configuration list for PBXNativeTarget "GenericPasswordRow" */;
+			buildPhases = (
+				CFFC76A81D7DFF29006C3E55 /* Sources */,
+				CFFC76A91D7DFF29006C3E55 /* Frameworks */,
+				CFFC76AA1D7DFF29006C3E55 /* Headers */,
+				CFFC76AB1D7DFF29006C3E55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenericPasswordRow;
+			productName = GenericPasswordRow;
+			productReference = CFFC76AD1D7DFF29006C3E55 /* GenericPasswordRow.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFFC76B61D7DFF2A006C3E55 /* GenericPasswordRowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFFC76C41D7DFF2A006C3E55 /* Build configuration list for PBXNativeTarget "GenericPasswordRowTests" */;
+			buildPhases = (
+				CFFC76B31D7DFF2A006C3E55 /* Sources */,
+				CFFC76B41D7DFF2A006C3E55 /* Frameworks */,
+				CFFC76B51D7DFF2A006C3E55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFFC76BA1D7DFF2A006C3E55 /* PBXTargetDependency */,
+			);
+			name = GenericPasswordRowTests;
+			productName = GenericPasswordRowTests;
+			productReference = CFFC76B71D7DFF2A006C3E55 /* GenericPasswordRowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFFC76A41D7DFF29006C3E55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Diego Ernst";
+				TargetAttributes = {
+					CFFC76AC1D7DFF29006C3E55 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					CFFC76B61D7DFF2A006C3E55 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CFFC76A71D7DFF29006C3E55 /* Build configuration list for PBXProject "GenericPasswordRow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CFFC76A31D7DFF29006C3E55;
+			productRefGroup = CFFC76AE1D7DFF29006C3E55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFFC76AC1D7DFF29006C3E55 /* GenericPasswordRow */,
+				CFFC76B61D7DFF2A006C3E55 /* GenericPasswordRowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFFC76AB1D7DFF29006C3E55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFFC76B51D7DFF2A006C3E55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFFC76A81D7DFF29006C3E55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFFC76B31D7DFF2A006C3E55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFC76BD1D7DFF2A006C3E55 /* GenericPasswordRowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFFC76BA1D7DFF2A006C3E55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFFC76AC1D7DFF29006C3E55 /* GenericPasswordRow */;
+			targetProxy = CFFC76B91D7DFF2A006C3E55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CFFC76BF1D7DFF2A006C3E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CFFC76C01D7DFF2A006C3E55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CFFC76C21D7DFF2A006C3E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GenericPasswordRow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.eureka.GenericPasswordRow.GenericPasswordRow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CFFC76C31D7DFF2A006C3E55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GenericPasswordRow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.eureka.GenericPasswordRow.GenericPasswordRow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CFFC76C51D7DFF2A006C3E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GenericPasswordRowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.eureka.GenericPasswordRow.GenericPasswordRowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CFFC76C61D7DFF2A006C3E55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GenericPasswordRowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.eureka.GenericPasswordRow.GenericPasswordRowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFFC76A71D7DFF29006C3E55 /* Build configuration list for PBXProject "GenericPasswordRow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFFC76BF1D7DFF2A006C3E55 /* Debug */,
+				CFFC76C01D7DFF2A006C3E55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFFC76C11D7DFF2A006C3E55 /* Build configuration list for PBXNativeTarget "GenericPasswordRow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFFC76C21D7DFF2A006C3E55 /* Debug */,
+				CFFC76C31D7DFF2A006C3E55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CFFC76C41D7DFF2A006C3E55 /* Build configuration list for PBXNativeTarget "GenericPasswordRowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFFC76C51D7DFF2A006C3E55 /* Debug */,
+				CFFC76C61D7DFF2A006C3E55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFFC76A41D7DFF29006C3E55 /* Project object */;
+}
