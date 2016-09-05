@@ -1,0 +1,12 @@
+language: objective-c
+osx_image: xcode7.3
+
+before_install:
+- brew update
+- brew outdated carthage || brew upgrade carthage
+- if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
+- carthage update --platform iOS
+- gem install xcpretty --no-rdoc --no-ri -≈-no-document --quiet
+
+script:
+- xctool clean build -project GenericPasswordRow.xcodeproj -scheme GenericPasswordRow -sdk iphonesimulator
