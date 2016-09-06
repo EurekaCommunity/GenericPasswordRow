@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
 
   spec.platform = :ios, "8.0"
   spec.requires_arc = true
-  spec.source = { git: "https://github.com/EurekaCommunity/GenericPasswordRow.git", tag: "v#{spec.version}", submodules: true }
+  spec.source = { git: "https://github.com/EurekaCommunity/GenericPasswordRow.git", tag: "#{spec.version}", submodules: true }
   spec.ios.source_files = 'Sources/**/*.swift'
   spec.resource_bundles = {
     'GenericPasswordRow' => ['Resources/*']
