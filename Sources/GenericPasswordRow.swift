@@ -9,10 +9,10 @@
 import Foundation
 import Eureka
 
-public class _GenericPasswordRow: Row<String, GenericPasswordCell> {
+open class _GenericPasswordRow: Row<GenericPasswordCell> {
 
-    public var passwordValidator: PasswordValidator = DefaultPasswordValidator()
-    public var placeholder: String? = "Password"
+    open var passwordValidator: PasswordValidator = DefaultPasswordValidator()
+    open var placeholder: String? = "Password"
 
     public required init(tag: String?) {
         super.init(tag: tag)
@@ -20,7 +20,7 @@ public class _GenericPasswordRow: Row<String, GenericPasswordCell> {
         cellProvider = CellProvider<GenericPasswordCell>(nibName: "GenericPasswordCell", bundle: Resources.bundle)
     }
 
-    public func isPasswordValid() -> Bool {
+    open func isPasswordValid() -> Bool {
         guard let value = value else {
             return false
         }

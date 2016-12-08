@@ -8,19 +8,19 @@
 
 import UIKit
 
-public class DefaultPasswordStrengthView: PasswordStrengthView {
+open class DefaultPasswordStrengthView: PasswordStrengthView {
 
     public typealias StrengthView = (view: UIView, p: CGFloat, color: UIColor)
-    public var strengthViews: [StrengthView]!
-    public var validator: PasswordValidator!
+    open var strengthViews: [StrengthView]!
+    open var validator: PasswordValidator!
 
-    public var progressView: UIView!
-    public var progress: CGFloat = 0
+    open var progressView: UIView!
+    open var progress: CGFloat = 0
 
-    public var borderColor = UIColor.lightGrayColor().colorWithAlphaComponent(0.2)
-    public var borderWidth = CGFloat(1)
-    public var cornerRadius = CGFloat(3)
-    public var animationTime = NSTimeInterval(0.3)
+    open var borderColor = UIColor.lightGray.withAlphaComponent(0.2)
+    open var borderWidth = CGFloat(1)
+    open var cornerRadius = CGFloat(3)
+    open var animationTime = TimeInterval(0.3)
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,68 +32,68 @@ public class DefaultPasswordStrengthView: PasswordStrengthView {
         setup()
     }
 
-    override public func setPasswordValidator(validator: PasswordValidator) {
+    override open func setPasswordValidator(_ validator: PasswordValidator) {
         self.validator = validator
-        let colorsForStrenghts = validator.colorsForStrengths().sort { $0.0 < $1.0 }
-        strengthViews = colorsForStrenghts.enumerate().map { index, element in
+        let colorsForStrenghts = validator.colorsForStrengths().sorted { $0.0 < $1.0 }
+        strengthViews = colorsForStrenghts.enumerated().map { index, element in
             let view = UIView()
-            view.layer.borderColor = borderColor.CGColor
+            view.layer.borderColor = borderColor.cgColor
             view.layer.borderWidth = borderWidth
             view.backgroundColor = backgroundColorForStrenghColor(element.1)
             let r = index < colorsForStrenghts.count - 1 ? colorsForStrenghts[index+1].0 : validator.maxStrength
             return (view: view, p: CGFloat(r / validator.maxStrength), color: element.1)
         }
-        strengthViews.reverse().forEach { addSubview($0.view) }
-        bringSubviewToFront(progressView)
+        strengthViews.reversed().forEach { addSubview($0.view) }
+        bringSubview(toFront: progressView)
     }
 
-    public func backgroundColorForStrenghColor(color: UIColor) -> UIColor {
+    open func backgroundColorForStrenghColor(_ color: UIColor) -> UIColor {
         var h = CGFloat(0), s = CGFloat(0), b = CGFloat(0), alpha = CGFloat(0)
         color.getHue(&h, saturation: &s, brightness: &b, alpha: &alpha)
         return UIColor(hue: h, saturation: 0.06, brightness: 1, alpha: alpha)
     }
 
-    public func setup() {
+    open func setup() {
         clipsToBounds = true
         layer.cornerRadius = cornerRadius
         progressView = UIView()
-        progressView.layer.borderColor = borderColor.CGColor
+        progressView.layer.borderColor = borderColor.cgColor
         progressView.layer.borderWidth = borderWidth
         addSubview(progressView)
         progress = 0
     }
 
-    override public func updateStrength(password password: String, animated: Bool = true) {
+    override open func updateStrength(password: String, animated: Bool = true) {
         let strength = validator.strengthForPassword(password)
         progress = CGFloat(strength / validator.maxStrength)
         updateView(animated: animated)
     }
 
-    public func colorForProgress() -> UIColor {
+    open func colorForProgress() -> UIColor {
         for strengthView in strengthViews {
             if progress <= strengthView.p {
                 return strengthView.color
             }
         }
-        return strengthViews.last?.color ?? .clearColor()
+        return strengthViews.last?.color ?? .clear
     }
 
-    public func updateView(animated animated: Bool) {
+    open func updateView(animated: Bool) {
         setNeedsLayout()
         if animated {
-            UIView.animateWithDuration(animationTime, animations: { [weak self] in
+            UIView.animate(withDuration: animationTime, animations: { [weak self] in
                 self?.layoutIfNeeded()
             }, completion: { [weak self] _ in
-                UIView.animateWithDuration(self?.animationTime ?? 0.3) { [weak self] in
+                UIView.animate(withDuration: self?.animationTime ?? 0.3, animations: { [weak self] in
                     self?.progressView?.backgroundColor = self?.colorForProgress()
-                }
+                }) 
             })
         } else {
             layoutIfNeeded()
         }
     }
 
-    override public func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         var size = frame.size
         size.width = size.width * progress
