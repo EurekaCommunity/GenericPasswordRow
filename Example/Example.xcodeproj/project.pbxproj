@@ -441,6 +441,7 @@
 		CFEB417D1D7E0AB50091C10E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6F2G55XL63;
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "../Carthage/Build/iOS/**";
@@ -456,6 +457,7 @@
 		CFEB417E1D7E0AB50091C10E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6F2G55XL63;
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "../Carthage/Build/iOS/**";
