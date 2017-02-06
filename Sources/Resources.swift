@@ -12,15 +12,10 @@ import UIKit
 struct Resources {
 
     static let bundle: Bundle = {
-        var bundle: Bundle
-        if let bundleWithIdentifier = Bundle(identifier: "com.xmartlabs.GenericPasswordRow") {
-            // Example or Carthage
-            bundle = bundleWithIdentifier
-        } else {
-            // Cocoapods
-            let podBundle = Bundle(for: GenericPasswordRow.self)
-            let bundleURL = podBundle.url(forResource: "Frameworks/GenericPasswordRow.framework/GenericPasswordRow", withExtension: "bundle")
-            bundle = Bundle(url: bundleURL!)!
+        var bundle = Bundle(for: GenericPasswordRow.self)
+        let bundleURL = bundle.url(forResource: "GenericPasswordRow", withExtension: "bundle")
+        if let bundleURL = bundleURL  {
+            bundle = Bundle(url: bundleURL)!
         }
         return bundle
     }()
