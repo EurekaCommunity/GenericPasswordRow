@@ -14,5 +14,5 @@ Pod::Spec.new do |spec|
     'GenericPasswordRow' => ['Resources/*']
   }
   spec.ios.frameworks = 'UIKit', 'Foundation'
-  spec.dependency "Eureka", "2.0.0-beta.1"
+  spec.dependency "Eureka", "2.0.1"
 end
