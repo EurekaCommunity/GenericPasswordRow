@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46F60E4E1D7F354E00E4C263 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F60E4D1D7F354E00E4C263 /* Eureka.framework */; };
-		46F60E4F1D7F354E00E4C263 /* Eureka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46F60E4D1D7F354E00E4C263 /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A3E278F1DF98634006BEC2F /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F60E4D1D7F354E00E4C263 /* Eureka.framework */; };
+		1A3E27901DF98634006BEC2F /* Eureka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46F60E4D1D7F354E00E4C263 /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AC6DF6E1DF865BC00FBDB88 /* GenericPasswordRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB68A591DF8618E00A21935 /* GenericPasswordRow.framework */; };
 		CFEB41581D7E0AB50091C10E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEB41571D7E0AB50091C10E /* AppDelegate.swift */; };
 		CFEB415A1D7E0AB50091C10E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEB41591D7E0AB50091C10E /* ViewController.swift */; };
 		CFEB415D1D7E0AB50091C10E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFEB415B1D7E0AB50091C10E /* Main.storyboard */; };
@@ -36,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		46F60E501D7F354F00E4C263 /* Embed Frameworks */ = {
+		1A3E27911DF98634006BEC2F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				46F60E4F1D7F354E00E4C263 /* Eureka.framework in Embed Frameworks */,
+				1A3E27901DF98634006BEC2F /* Eureka.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1AB68A591DF8618E00A21935 /* GenericPasswordRow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GenericPasswordRow.framework; path = "../../../Library/Developer/Xcode/DerivedData/GenericPasswordRow-digbjebufqbyoschpkgcwjfotdou/Build/Products/Debug-iphonesimulator/GenericPasswordRow.framework"; sourceTree = "<group>"; };
 		46F60E4D1D7F354E00E4C263 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = ../Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 		CFEB41541D7E0AB50091C10E /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFEB41571D7E0AB50091C10E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46F60E4E1D7F354E00E4C263 /* Eureka.framework in Frameworks */,
+				1A3E278F1DF98634006BEC2F /* Eureka.framework in Frameworks */,
+				1AC6DF6E1DF865BC00FBDB88 /* GenericPasswordRow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AB68A581DF8618E00A21935 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AB68A591DF8618E00A21935 /* GenericPasswordRow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CFEB414B1D7E0AB50091C10E = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +111,7 @@
 				CFEB416B1D7E0AB50091C10E /* ExampleTests */,
 				CFEB41761D7E0AB50091C10E /* ExampleUITests */,
 				CFEB41551D7E0AB50091C10E /* Products */,
+				1AB68A581DF8618E00A21935 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,7 +166,7 @@
 				CFEB41501D7E0AB50091C10E /* Sources */,
 				CFEB41511D7E0AB50091C10E /* Frameworks */,
 				CFEB41521D7E0AB50091C10E /* Resources */,
-				46F60E501D7F354F00E4C263 /* Embed Frameworks */,
+				1A3E27911DF98634006BEC2F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,18 +220,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Diego Ernst";
 				TargetAttributes = {
 					CFEB41531D7E0AB50091C10E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6F2G55XL63;
+						LastSwiftMigration = 0810;
 					};
 					CFEB41671D7E0AB50091C10E = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = CFEB41531D7E0AB50091C10E;
 					};
 					CFEB41721D7E0AB50091C10E = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = CFEB41531D7E0AB50091C10E;
 					};
 				};
@@ -346,8 +362,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -392,8 +410,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -412,6 +432,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -420,24 +441,32 @@
 		CFEB417D1D7E0AB50091C10E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6F2G55XL63;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "../Carthage/Build/iOS/**";
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.eureka.GenericPasswordRow.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		CFEB417E1D7E0AB50091C10E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6F2G55XL63;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "../Carthage/Build/iOS/**";
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.eureka.GenericPasswordRow.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -449,6 +478,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.eureka.GenericPasswordRow.ExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
 			name = Debug;
@@ -461,6 +491,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.eureka.GenericPasswordRow.ExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
 			name = Release;
@@ -472,6 +503,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.eureka.GenericPasswordRow.ExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Example;
 			};
 			name = Debug;
@@ -483,6 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.eureka.GenericPasswordRow.ExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Example;
 			};
 			name = Release;

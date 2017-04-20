@@ -16,9 +16,9 @@ public struct PasswordRule {
 
 }
 
-public class DefaultPasswordValidator: PasswordValidator {
+open class DefaultPasswordValidator: PasswordValidator {
 
-    public let maxStrength = 4.0
+    open let maxStrength = 4.0
 
     let rules: [PasswordRule] = [
         PasswordRule(hint: "Please enter a lowercase letter") { $0.satisfiesRegexp("[a-z]") },
@@ -27,19 +27,19 @@ public class DefaultPasswordValidator: PasswordValidator {
         PasswordRule(hint: "At least 6 characters") { $0.characters.count > 5 }
     ]
 
-    public func strengthForPassword(password: String) -> Double {
+    open func strengthForPassword(_ password: String) -> Double {
         return rules.reduce(0) { $0 + ($1.test(password) ? 1 : 0) }
     }
 
-    public func hintForPassword(password: String) -> String? {
+    open func hintForPassword(_ password: String) -> String? {
         return rules.reduce([]) { $0 + ($1.test(password) ? []: [$1.hint]) }.first
     }
 
-    public func isPasswordValid(password: String) -> Bool {
+    open func isPasswordValid(_ password: String) -> Bool {
         return rules.reduce(true) { $0 && $1.test(password) }
     }
 
-    public func colorsForStrengths() -> [Double: UIColor] {
+    open func colorsForStrengths() -> [Double: UIColor] {
         return [
             0: UIColor(red: 244 / 255, green: 67 / 255, blue: 54 / 255, alpha: 1),
             1: UIColor(red: 255 / 255, green: 193 / 255, blue: 7 / 255, alpha: 1),
@@ -52,8 +52,8 @@ public class DefaultPasswordValidator: PasswordValidator {
 
 internal extension String {
 
-    func satisfiesRegexp(regexp: String) -> Bool {
-        return rangeOfString(regexp, options: .RegularExpressionSearch) != nil
+    func satisfiesRegexp(_ regexp: String) -> Bool {
+        return range(of: regexp, options: .regularExpression) != nil
     }
 
 }

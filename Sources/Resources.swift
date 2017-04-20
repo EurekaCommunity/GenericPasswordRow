@@ -11,22 +11,17 @@ import UIKit
 
 struct Resources {
 
-    static let bundle: NSBundle = {
-        var bundle: NSBundle
-        if let bundleWithIdentifier = NSBundle(identifier: "com.xmartlabs.GenericPasswordRow") {
-            // Example or Carthage
-            bundle = bundleWithIdentifier
-        } else {
-            // Cocoapods
-            let podBundle = NSBundle(forClass: GenericPasswordRow.self)
-            let bundleURL = podBundle.URLForResource("Frameworks/GenericPasswordRow.framework/GenericPasswordRow", withExtension: "bundle")
-            bundle = NSBundle(URL: bundleURL!)!
+    static let bundle: Bundle = {
+        var bundle = Bundle(for: GenericPasswordRow.self)
+        let bundleURL = bundle.url(forResource: "GenericPasswordRow", withExtension: "bundle")
+        if let bundleURL = bundleURL  {
+            bundle = Bundle(url: bundleURL)!
         }
         return bundle
     }()
 
-    static func image(named named: String) -> UIImage? {
-        return UIImage(named: named, inBundle: Resources.bundle, compatibleWithTraitCollection: nil)?.imageWithRenderingMode(.AlwaysTemplate)
+    static func image(named: String) -> UIImage? {
+        return UIImage(named: named, in: Resources.bundle, compatibleWith: nil)?.withRenderingMode(.alwaysTemplate)
     }
 
 }

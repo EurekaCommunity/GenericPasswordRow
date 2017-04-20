@@ -8,9 +8,9 @@
 
 import UIKit
 
-public class PasswordStrengthView: UIView {
+open class PasswordStrengthView: UIView {
 
-    public func setPasswordValidator(validator: PasswordValidator) { }
-    public func updateStrength(password password: String, animated: Bool = true) { }
+    open func setPasswordValidator(_ validator: PasswordValidator) { }
+    open func updateStrength(password: String, animated: Bool = true) { }
 
 }
