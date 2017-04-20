@@ -54,7 +54,7 @@ class ViewController: FormViewController {
 ## Requirements
 
 * iOS 8.0+
-* Xcode 7.3+
+* Xcode 8.0+
 
 ## Getting involved
 
