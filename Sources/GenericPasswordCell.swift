@@ -11,10 +11,10 @@ import Eureka
 
 open class GenericPasswordCell: Cell<String>, CellType {
 
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet public weak var textField: UITextField!
     @IBOutlet weak var visibilityButton: UIButton?
     @IBOutlet weak var passwordStrengthView: PasswordStrengthView?
-    @IBOutlet weak var hintLabel: UILabel?
+    @IBOutlet public weak var hintLabel: UILabel?
 
     var genericPasswordRow: _GenericPasswordRow! {
         return row as? _GenericPasswordRow
