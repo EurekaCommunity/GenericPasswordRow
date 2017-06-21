@@ -15,6 +15,9 @@ open class GenericPasswordCell: _FieldCell<String>, CellType {
     @IBOutlet weak var passwordStrengthView: PasswordStrengthView?
     @IBOutlet public weak var hintLabel: UILabel?
 
+    @IBOutlet public weak var leading: NSLayoutConstraint!
+    @IBOutlet public weak var trailing: NSLayoutConstraint!
+
     var genericPasswordRow: _GenericPasswordRow! {
         return row as? _GenericPasswordRow
     }
