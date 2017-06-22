@@ -9,12 +9,14 @@
 import Foundation
 import Eureka
 
-open class GenericPasswordCell: Cell<String>, CellType {
+open class GenericPasswordCell: _FieldCell<String>, CellType {
 
-    @IBOutlet public weak var textField: UITextField!
     @IBOutlet weak var visibilityButton: UIButton?
     @IBOutlet weak var passwordStrengthView: PasswordStrengthView?
     @IBOutlet public weak var hintLabel: UILabel?
+
+    @IBOutlet public weak var leading: NSLayoutConstraint!
+    @IBOutlet public weak var trailing: NSLayoutConstraint!
 
     var genericPasswordRow: _GenericPasswordRow! {
         return row as? _GenericPasswordRow
@@ -81,7 +83,7 @@ open class GenericPasswordCell: Cell<String>, CellType {
         visibilityButton?.setImage(textField.isSecureTextEntry ? visibilityImage.on : visibilityImage.off, for: .normal)
     }
 
-    open func textFieldDidChange(_ textField: UITextField) {
+    open override func textFieldDidChange(_ textField: UITextField) {
         genericPasswordRow.value = textField.text
         updatePasswordStrengthIfNeeded()
 

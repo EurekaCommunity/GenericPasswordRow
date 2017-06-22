@@ -9,7 +9,10 @@
 import Foundation
 import Eureka
 
-open class _GenericPasswordRow: Row<GenericPasswordCell> {
+open class _GenericPasswordRow: Row<GenericPasswordCell>, KeyboardReturnHandler {
+
+    /// Configuration for the keyboardReturnType of this row
+    open var keyboardReturnType: KeyboardReturnTypeConfiguration?
 
     open var passwordValidator: PasswordValidator = DefaultPasswordValidator()
     open var placeholder: String? = "Password"
