@@ -83,7 +83,7 @@ Follow these steps to run Example project:
 To install GenericPasswordRow, simply add the following line to your Podfile:
 
 ```ruby
-pod 'GenericPasswordRow', '~> 2.1'
+pod 'GenericPasswordRow', '~> 3.0'
 ```
 
 #### Carthage
@@ -93,7 +93,7 @@ pod 'GenericPasswordRow', '~> 2.1'
 To install GenericPasswordRow, simply add the following line to your Cartfile:
 
 ```ogdl
-github "EurekaCommunity/GenericPasswordRow" ~> 2.1
+github "EurekaCommunity/GenericPasswordRow" ~> 3.0
 ```
 
 
