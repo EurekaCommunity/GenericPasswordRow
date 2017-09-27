@@ -70,7 +70,7 @@ open class GenericPasswordCell: _FieldCell<String>, CellType {
         textField.placeholder = genericPasswordRow.placeholder
     }
 
-    open func togglePasswordVisibility() {
+    @objc open func togglePasswordVisibility() {
         textField.isSecureTextEntry = !textField.isSecureTextEntry
         setVisibilityButtonImage()
         // workaround to update cursor position
