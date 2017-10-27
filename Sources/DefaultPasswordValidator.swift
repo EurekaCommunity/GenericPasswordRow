@@ -24,7 +24,7 @@ open class DefaultPasswordValidator: PasswordValidator {
         PasswordRule(hint: NSLocalizedString("Please enter a lowercase letter", comment: "")) { $0.satisfiesRegexp("[a-z]") },
         PasswordRule(hint: NSLocalizedString("Please enter a number", comment: "")) { $0.satisfiesRegexp("[0-9]") },
         PasswordRule(hint: NSLocalizedString("Please enter an uppercase letter", comment: "")) { $0.satisfiesRegexp("[A-Z]") },
-        PasswordRule(hint: NSLocalizedString("At least 6 characters", comment: "")) { $0.characters.count > 5 }
+        PasswordRule(hint: NSLocalizedString("At least 6 characters", comment: "")) { $0.count > 5 }
     ]
 
     open func strengthForPassword(_ password: String) -> Double {
