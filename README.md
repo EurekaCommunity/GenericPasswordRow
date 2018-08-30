@@ -38,6 +38,7 @@ By [Xmartlabs SRL](http://xmartlabs.com).
 ## Usage
 
 ```swift
+import Eureka
 import GenericPasswordRow
 
 class ViewController: FormViewController {
