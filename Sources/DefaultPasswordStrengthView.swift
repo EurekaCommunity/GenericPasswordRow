@@ -44,7 +44,7 @@ open class DefaultPasswordStrengthView: PasswordStrengthView {
             return (view: view, p: CGFloat(r / validator.maxStrength), color: element.1)
         }
         strengthViews.reversed().forEach { addSubview($0.view) }
-        bringSubview(toFront: progressView)
+        bringSubviewToFront(progressView)
     }
 
     open func backgroundColorForStrenghColor(_ color: UIColor) -> UIColor {
