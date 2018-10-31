@@ -28,7 +28,7 @@ open class GenericPasswordCell: _FieldCell<String>, CellType {
         }
     }
 
-    open var dynamicHeight = (collapsed: UITableViewAutomaticDimension, expanded: UITableViewAutomaticDimension) {
+    open var dynamicHeight = (collapsed: UITableView.automaticDimension, expanded: UITableView.automaticDimension) {
         didSet {
             let value = dynamicHeight
             height = { [weak self] in
@@ -37,7 +37,7 @@ open class GenericPasswordCell: _FieldCell<String>, CellType {
         }
     }
 
-    public required init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    public required init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 

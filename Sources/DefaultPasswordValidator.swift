@@ -18,7 +18,7 @@ public struct PasswordRule {
 
 open class DefaultPasswordValidator: PasswordValidator {
 
-    open let maxStrength = 4.0
+    public let maxStrength = 4.0
 
     let rules: [PasswordRule] = [
         PasswordRule(hint: NSLocalizedString("Please enter a lowercase letter", comment: "")) { $0.satisfiesRegexp("[a-z]") },
