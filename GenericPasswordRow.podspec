@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.license = { type: 'MIT', file: 'LICENSE' }
   spec.authors = { "Diego Ernst" => 'dernst@xmartlabs.com' }
 
-  spec.platform = :ios, "8.0"
+  spec.platform = :ios, "9.0"
   spec.requires_arc = true
   spec.source = { git: "https://github.com/EurekaCommunity/GenericPasswordRow.git", tag: "#{spec.version}", submodules: true }
   spec.ios.source_files = 'Sources/**/*.swift'
@@ -14,5 +14,5 @@ Pod::Spec.new do |spec|
     'GenericPasswordRow' => ['Resources/*']
   }
   spec.ios.frameworks = 'UIKit', 'Foundation'
-  spec.dependency "Eureka", "~> 4.0"
+  spec.dependency "Eureka", "~> 5.0"
 end
