@@ -1,6 +1,16 @@
 # Change Log
 All notable changes to GenericPasswordRow will be documented in this file.
 
+### [3.1.0](https://github.com/EurekaCommunity/GenericPasswordRow/releases/tag/3.1.0)
+<!-- Released on 2020-07-09. -->
+
+* Update for Swift 5 and Eureka 5.2.1
+
+### [3.0.0](https://github.com/EurekaCommunity/GenericPasswordRow/releases/tag/3.0.0)
+<!-- Released on 2017-09-27. -->
+
+* Update for Swift 4 and Eureka 4.0
+
 ### [2.1.1](https://github.com/EurekaCommunity/GenericPasswordRow/releases/tag/2.1.1)
 <!-- Released on 2017-06-22. -->
 

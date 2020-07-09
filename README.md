@@ -55,8 +55,8 @@ class ViewController: FormViewController {
 ## Requirements
 
 * iOS 9.0+
-* Xcode 9.0+
-* Eureka ~>4.0
+* Xcode 11.5+
+* Eureka ~> 5.2.1
 
 ## Getting involved
 
@@ -85,7 +85,7 @@ Follow these steps to run Example project:
 To install GenericPasswordRow, simply add the following line to your Podfile:
 
 ```ruby
-pod 'GenericPasswordRow', '~> 3.0'
+pod 'GenericPasswordRow', '~> 3.1'
 ```
 
 #### Carthage
@@ -95,7 +95,7 @@ pod 'GenericPasswordRow', '~> 3.0'
 To install GenericPasswordRow, simply add the following line to your Cartfile:
 
 ```ogdl
-github "EurekaCommunity/GenericPasswordRow" ~> 3.0
+github "EurekaCommunity/GenericPasswordRow" ~> 3.1
 ```
 
 
