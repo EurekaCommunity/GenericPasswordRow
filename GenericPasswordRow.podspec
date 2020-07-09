@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "GenericPasswordRow"
-  spec.version = "3.0.0"
+  spec.version = "3.1.0"
   spec.summary = "Eureka row to validate passwords"
   spec.homepage = "https://github.com/EurekaCommunity/GenericPasswordRow"
   spec.license = { type: 'MIT', file: 'LICENSE' }
@@ -13,6 +13,7 @@ Pod::Spec.new do |spec|
   spec.resource_bundles = {
     'GenericPasswordRow' => ['Resources/*']
   }
+  spec.swift_version = '5.0'
   spec.ios.frameworks = 'UIKit', 'Foundation'
-  spec.dependency "Eureka", "~> 5.0"
+  spec.dependency "Eureka", "~> 5.2"
 end
